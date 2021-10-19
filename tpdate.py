@@ -3,7 +3,10 @@ try:
     m=int(input("donnez le mois"))
     a=int(input("donnez l anné"))
 except:
+    
     print("la date doit être numérique")
+    exit(0)
+    #exit(0) pour stopper l'éxcution => break en cas de sortie de boucle
 if j<1 or m<1 or a<1:
     print("les paramétres doivent être positif")
 elif j>31 or m>12 or a<1900:
