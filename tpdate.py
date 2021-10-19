@@ -1,6 +1,9 @@
-j=int(input("donnez le jour"))
-m=int(input("donnez le mois"))
-a=int(input("donnez l anné"))
+try:
+    j=int(input("donnez le jour"))
+    m=int(input("donnez le mois"))
+    a=int(input("donnez l anné"))
+except:
+    print("la date doit être numérique")
 if j<1 or m<1 or a<1:
     print("les paramétres doivent être positif")
 elif j>31 or m>12 or a<1900:
